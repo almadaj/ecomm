@@ -18,10 +18,10 @@ public class Product {
     @GeneratedValue(strategy = GenerationType.UUID)
     private UUID id;
 
-    @Column
+    @Column(nullable = false)
     private String name;
 
-    @Column
+    @Column(nullable = false)
     private double price;
 
     @Column(name = "created_at", updatable = false, nullable = false)
